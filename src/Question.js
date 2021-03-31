@@ -32,6 +32,7 @@ export default function Question({ question, finished, index, isFirst, isLast, o
         <Hr />
         {question.choices.map((choice, idx) => (
           <Form.Check
+            disabled={finished}
             key={String(idx)}
             type="radio"
             label={<ReactMarkdown>{choice}</ReactMarkdown>}

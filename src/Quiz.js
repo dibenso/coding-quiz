@@ -33,6 +33,44 @@ const quiz = [
     choices: ["`String`", "`boolean`", "`Object`", "`Number`"],
     correct: 1,
     answer: null
+  },
+  {
+    text: `What is the value of \`indicator\`?
+    
+    const indicator = 2 == "2";`,
+    choices: ["`null`", "0", "`true`", "`false`"],
+    correct: 2,
+    answer: null
+  },
+  {
+    text: "Node.js applications cannot run in a web browser.",
+    choices: ["True", "False"],
+    correct: 0,
+    answer: null
+  },
+  {
+    text: "Which of the follwing is an alternative package manager to NPM?",
+    choices: ["webpack", "gulp", "yarn", "package.json"],
+    correct: 2,
+    answer: null
+  },
+  {
+    text: "Which of the following is a valid method used for fetching initial data in React?",
+    choices: ["`componentDidMount()`", "`setState()`", "`document.onload()`", "`document.ready()`"],
+    correct: 0,
+    answer: null
+  },
+  {
+    text: "JavaScript has a garbage collector to reclaim unused memory.",
+    choices: ["True", "False"],
+    correct: 0,
+    answer: null
+  },
+  {
+    text: "In the context of async / await, how do you handle errors?",
+    choices: ["`await`", "`reject`", "`catch`", "`then`"],
+    correct: 2,
+    answer: null
   }
 ];
 
