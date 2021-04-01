@@ -7,9 +7,9 @@ const buttonLogo = ({ answer, correct }) => {
   return <FaTimes size={10} color="white" />
 }
 const variant = ({ answer, correct }, finished) => {
-  if(finished && answer === correct) return "success";
+  if(answer === correct) return "success";
+  if(answer !== undefined && answer !== correct) return "danger";
   if(finished) return "danger";
-  if(answer !== null) return "secondary";
   
   return "primary";
 }
@@ -24,7 +24,7 @@ export default function QuestionNumbers({ questions, finished, onChange }) {
           style={{ marginLeft: 5, marginRight: 5 }}
           onClick={() => onChange(index)}
         >
-          {finished && buttonLogo(question)}
+          {(question.answer !== undefined || finished) && buttonLogo(question)}
           {" "}
           {index + 1}
         </Button>
